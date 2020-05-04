@@ -3,5 +3,5 @@ This Repository will hold all the documentations, tutorials, and code for digita
 
 ## Table of Contents
 #### Set-up
-  ###### Background
-  ###### Downloads
+&nbsp;&nbsp; ###### Background
+&nbsp;&nbsp; ###### Downloads
