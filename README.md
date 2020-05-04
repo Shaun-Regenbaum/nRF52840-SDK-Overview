@@ -1,6 +1,5 @@
-# DSP 
-This Repository will hold all the documentations, tutorials, and code for digital signal processing and storage.
-
+# nRF52840
+This Repository will hold all the documentations, tutorials, and code for what we are doing with the nRF52840.
 ## Table of Contents
 #### Set-up
 ###### &nbsp;&nbsp;&nbsp;&nbsp; Background
