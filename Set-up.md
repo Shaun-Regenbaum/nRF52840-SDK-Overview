@@ -26,5 +26,5 @@ You can download nRF-Connect from [here](https://www.nordicsemi.com/Software-and
 We are going to be using Visual Studio Code, also known as VS Code. You can get it [here](https://code.visualstudio.com/).
 More importantly we are using a C/C++ language support extension by Microsoft. You should be able to find it by simply looking up C/C++ in VS Code, It should be the first option. Just in case, its formal name is ms-vscode.cpptools by Microsoft, and can be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
 
-## RNF Connect
-## Toolchain
+## ToolChain
+
