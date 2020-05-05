@@ -29,6 +29,6 @@ More importantly we are using a C/C++ language support extension by Microsoft. Y
 ## ToolChain
 So you will find the config files for setting up your toolchain in the components folder of the SDK. There are a bunch of different options for your toolchain. The most important desicion is what compiler you will use. For our development we are using the standard GCC toolchain. The compiler is probabably already installed on your machine, but if not you can install it from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm). 
 
-You will then need to set up the maker-file that defines the behaviour of the 'make' command which we will be using to compile our code. To do this navigate to ".\components\toolchain\gcc\Makefile.windows" where you will need to identify where the bin file is for your compiler. In my case it is found here "C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/". You will also need to specify the version you are using and the prefix, which in our case is "arm-none-eabi".
+You will then need to set up the maker-file that defines the behaviour of the 'make' command which we will be using to compile our code. To do this navigate to ".\components\toolchain\gcc\Makefile.windows" where you will need to identify where the bin file is for your compiler. In my case it is found here "C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/". You will also need to specify the version you are using and the prefix. In our case, the pre-fix is "arm-none-eabi".
 
 
