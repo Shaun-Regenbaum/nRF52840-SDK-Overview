@@ -1,7 +1,22 @@
 # SDK
 ## What is in it?
 ### Components
-This section of the SDK contains different libraries for the differnt peripherals and I/O options that are on the board. It also contains config files, files for compiling, and mre. We wont go through all of them right now, but for example you can see the 'ble' section which contains libraries and functions for the bluetooth low energy (ble) component of the board. You would look inside there for already-built functions and objects that make it a lot easier to utilize the bluetooth capabilities of the board. So this is an important part of the SDK we will explore later.
+This section of the SDK contains different APIs, libraries, and functions to use the differnt capabilities of the dongle. There are also the different toolchains for specific softdevices and their APIs. Finally it contains linker files and other files for connecting the SDK to a given toolchain. We wont go through it all, but will go through some important parts of it:
+#### &nbsp&nbsp 802_15_4
+
+#### &nbsp&nbsp ant
+#### &nbsp&nbsp ble
+#### &nbsp&nbsp boards
+#### &nbsp&nbsp drivers
+#### &nbsp&nbsp iot
+#### &nbsp&nbsp libraries
+#### &nbsp&nbsp nfc
+#### &nbsp&nbsp propietary_rf
+#### &nbsp&nbsp serialization
+#### &nbsp&nbsp softdevice
+#### &nbsp&nbsp toolchain
+
+
 ### Config
 This section of the SDK contains configuration files. You may need to edit these if you are running into probablems with things referencing each other, but you will most likely not need to touch this folder. 
 ### Documentation
