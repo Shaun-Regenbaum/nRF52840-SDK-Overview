@@ -10,8 +10,11 @@ ANT (Adaptive Network Topology) is a proprietary multicast wireless sensor netwo
 BLE (Bluetooth Low Energy) is one of the best things about the nRF52850 Dongle. This allows it full access to bluetooth networks, meshes, and other forms of bluetooth communications. There is a lot of cool stuff you can do with bluetooth and this device, but I will point out a few of the cool things that the SDK provides (although there is much more):
 ##### ble_advertising
 Bluetooth advertising is when a bluetooth device broadcasts data, either to simply transmit data or to prompt connections. Either way this is one of the most useful parts of bluetooth. Here you will find code (ble_advertising.c file) for everything you might want with bluetooth advertising. There is also the header file (ble_advertising.h) that tells us the data strucutres and more information on the I/O of the code. Below are some great functions:
+
  ```C++ addr_is_valid()``` A function to validate a bluetooth address
+ 
  ```C++ on_connected()``` A function to determine the handling of the Connected event in the BLE stack
+ 
  ```C++ on_disconnected()``` A function to determine the handling of the Disconnected event in the BLE stack
 ##### ble_db_discovery
 ##### ble_db_discovery
