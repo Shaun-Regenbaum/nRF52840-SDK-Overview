@@ -29,6 +29,18 @@ This contains features for BLE that are offered by certain servers and clients. 
 This contains common functions that are both used in other places, and functions that you will probably want to use such as scanning functions. Definetly look in here for main things. 
 
 #### boards
+This is an EXTREMELY important folder. It contains mappings for all the different boards you may be using. Our nRF52840 dongle is equivalent to a pca10059 board. So if you want to see the relevant pin and component names look in the pca10059.h header file.
+
+When you actually want to reference the mappings, you do not need to reference the specific board you are using, rather you can simply refer to the boards.h header file as it contains everything in it.
+
+You will also find functions in the board.c file. They are extremely useful. Some examples: 
+
+&nbsp;&nbsp;```C++ bsp_board_led_on()``` A function to turn on an led on the board.
+
+&nbsp;&nbsp;```C++ gpio_output_voltage_setup(void)``` A function to set GPIO output voltage to 3.0V
+
+&nbsp;&nbsp;```C++ bsp_board_buttons_init(void)``` A function to initialize the buttons on the board.
+
 #### drivers
 #### iot
 #### libraries
