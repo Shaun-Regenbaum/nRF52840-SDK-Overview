@@ -9,6 +9,11 @@ This Repository will hold all the documentations, tutorials, and code for what w
 
 #### SDK
 ###### &nbsp;&nbsp;&nbsp;&nbsp; What is in it?
+###### &nbsp;&nbsp;&nbsp;&nbsp; Important Parts
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Functions
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Interfaces
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other...
+
 
 #### Simple Example Project
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Getting Started
