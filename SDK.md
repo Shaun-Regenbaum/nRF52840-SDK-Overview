@@ -1,7 +1,7 @@
 # SDK
 ## What is in it?
 ### &nbsp;Components
-&nbsp; <p>This section of the SDK contains different APIs, libraries, and functions to use the differnt capabilities of the dongle. There are also the different toolchains for specific softdevices and their APIs. Finally it contains linker files and other files for connecting the SDK to a given toolchain. We wont go through it all, but will go through some important parts of it:<\p>
+&nbsp; <p>This section of the SDK contains different APIs, libraries, and functions to use the differnt capabilities of the dongle. There are also the different toolchains for specific softdevices and their APIs. Finally it contains linker files and other files for connecting the SDK to a given toolchain. We wont go through it all, but will go through some important parts of it:</p>
 #### &nbsp;&nbsp;802_15_4
 &nbsp;&nbsp;IEEE 802.15.4 is a technical standard which defines the operation of low-rate wireless personal area networks. So if you want to do anything with personal area networks, this would be the place to find out about its secure communication protocols and its api.
 #### &nbsp;&nbsp;ant
