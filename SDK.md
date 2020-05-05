@@ -2,19 +2,19 @@
 ## What is in it?
 ### Components
 This section of the SDK contains different APIs, libraries, and functions to use the differnt capabilities of the dongle. There are also the different toolchains for specific softdevices and their APIs. Finally it contains linker files and other files for connecting the SDK to a given toolchain. We wont go through it all, but will go through some important parts of it:
-#### &nbsp&nbsp 802_15_4
+#### 802_15_4
 
-#### &nbsp&nbsp ant
-#### &nbsp&nbsp ble
-#### &nbsp&nbsp boards
-#### &nbsp&nbsp drivers
-#### &nbsp&nbsp iot
-#### &nbsp&nbsp libraries
-#### &nbsp&nbsp nfc
-#### &nbsp&nbsp propietary_rf
-#### &nbsp&nbsp serialization
-#### &nbsp&nbsp softdevice
-#### &nbsp&nbsp toolchain
+#### ant
+#### ble
+#### boards
+#### drivers
+#### iot
+#### libraries
+#### nfc
+#### propietary_rf
+#### serialization
+#### softdevice
+#### toolchain
 
 
 ### Config
