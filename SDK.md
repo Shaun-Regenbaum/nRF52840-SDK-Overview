@@ -8,41 +8,41 @@
 >> ANT (Adaptive Network Topology) is a proprietary multicast wireless sensor network technology. So if you need to communcinate with other devices that are using ANT look here.
 > #### ble
 >> BLE (Bluetooth Low Energy) is one of the best things about the nRF52850 Dongle. This allows it full access to bluetooth networks, meshes, and other forms of bluetooth communications. There is a lot of cool stuff you can do with bluetooth and this device, but I will point out a few of the cool things that the SDK provides (although there is much more):
-> ###### ble_advertising
->> Bluetooth advertising is when a bluetooth device broadcasts data, either to simply transmit data or to prompt connections. Either way this is one of the most useful parts of bluetooth. Here you will find code (ble_advertising.c file) for everything you might want with bluetooth advertising. There is also the header file (ble_advertising.h) that tells us the data strucutres and more information on the I/O of the code. Below are some great functions:
+>> ###### ble_advertising
+>>> Bluetooth advertising is when a bluetooth device broadcasts data, either to simply transmit data or to prompt connections. Either way this is one of the most useful parts of bluetooth. Here you will find code (ble_advertising.c file) for everything you might want with bluetooth advertising. There is also the header file (ble_advertising.h) that tells us the data strucutres and more information on the I/O of the code. Below are some great functions:
 
-&nbsp;&nbsp;```C++ addr_is_valid()``` A function to validate a bluetooth address
+>>> &nbsp;&nbsp;```C++ addr_is_valid()``` A function to validate a bluetooth address
 
-&nbsp;&nbsp;```C++ on_connected()``` A function to determine the handling of the Connected event in the BLE stack
+>>> &nbsp;&nbsp;```C++ on_connected()``` A function to determine the handling of the Connected event in the BLE stack
 
-&nbsp;&nbsp;```C++ on_disconnected()``` A function to determine the handling of the Disconnected event in the BLE stack
+>>> &nbsp;&nbsp;```C++ on_disconnected()``` A function to determine the handling of the Disconnected event in the BLE stack
 
-> ###### ble_db_discovery
->> Bluetooth Database discovery is the way a device gets information from an application's profile. It can look at the UUID's of any service, as well as the charecteristics and properties (I am using all those terms in the formal sense as defined by Bluetooth protocols). A great function is:
+>> ###### ble_db_discovery
+>>> Bluetooth Database discovery is the way a device gets information from an application's profile. It can look at the UUID's of any service, as well as the charecteristics and properties (I am using all those terms in the formal sense as defined by Bluetooth protocols). A great function is:
 
-&nbsp;&nbsp;```C++ characteristics_discover()``` A function for charecteristic discovery.
+>>> &nbsp;&nbsp;```C++ characteristics_discover()``` A function for charecteristic discovery.
 
-###### ble_services
-This contains features for BLE that are offered by certain servers and clients. For example, if you want to work with Apple's Notification service, you can find functions in the ble_ancs_c folder (ANCS stands for Apple Notification Center Service).
+>> ###### ble_services
+>>> This contains features for BLE that are offered by certain servers and clients. For example, if you want to work with Apple's Notification service, you can find functions in the ble_ancs_c folder (ANCS stands for Apple Notification Center Service).
 
-###### common
-This contains common functions that are both used in other places, and functions that you will probably want to use such as scanning functions. Definetly look in here for main things. 
+>> ###### common
+>>> This contains common functions that are both used in other places, and functions that you will probably want to use such as scanning functions. Definetly look in here for main things. 
 
-#### boards
-This is an EXTREMELY important folder. It contains mappings for all the different boards you may be using. Our nRF52840 dongle is equivalent to a pca10059 board. So if you want to see the relevant pin and component names look in the pca10059.h header file.
+> #### boards
+>> This is an EXTREMELY important folder. It contains mappings for all the different boards you may be using. Our nRF52840 dongle is equivalent to a pca10059 board. So if you want to see the relevant pin and component names look in the pca10059.h header file.
 
-When you actually want to reference the mappings, you do not need to reference the specific board you are using, rather you can simply refer to the boards.h header file as it contains everything in it.
+>> When you actually want to reference the mappings, you do not need to reference the specific board you are using, rather you can simply refer to the boards.h header file as it contains everything in it.
 
-You will also find functions in the board.c file. They are extremely useful. Some examples: 
+>> You will also find functions in the board.c file. They are extremely useful. Some examples: 
 
-&nbsp;&nbsp;```C++ bsp_board_led_on()``` A function to turn on an led on the board.
+>> &nbsp;&nbsp;```C++ bsp_board_led_on()``` A function to turn on an led on the board.
 
-&nbsp;&nbsp;```C++ gpio_output_voltage_setup(void)``` A function to set GPIO output voltage to 3.0V
+>> &nbsp;&nbsp;```C++ gpio_output_voltage_setup(void)``` A function to set GPIO output voltage to 3.0V
 
-&nbsp;&nbsp;```C++ bsp_board_buttons_init(void)``` A function to initialize the buttons on the board.
+>> &nbsp;&nbsp;```C++ bsp_board_buttons_init(void)``` A function to initialize the buttons on the board.
 
-#### drivers
-This incorporates the drivers_ext and drivers_nrf folders. These both contain drivers for various peripherals you might use. For example if you want to use radio components you dont have to build the API from scratch it is already done for you. 
+>#### drivers
+>> This incorporates the drivers_ext and drivers_nrf folders. These both contain drivers for various peripherals you might use. For example if you want to use radio components you dont have to build the API from scratch it is already done for you. 
 
 #### iot
 This contains a whole bunch of stuff. Lets say for some reason you are using the dongle as a controller for a server, there is code for FTP transfer stuff as well as DFU stuff. There is a whole lot of communication code with bigger things. So if you want to do Internet of Things stuff, then look here. 
