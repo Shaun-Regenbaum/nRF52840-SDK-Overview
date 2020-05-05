@@ -15,8 +15,7 @@ You will also copy the be_app_blinky.eww file you see in the folder. This file j
 You will also see a main.c file there containing code. That is the code for the full example project, but it is a bit overkill for what we want so we are going to leave it. 
 
 Now go back to your fodler where you are going to be holding your pesonal projects. There you will make a main.c file, an example of this is provided in the repository. The code is also provided below:
-<code> 
-#include "boards.h"
+'''#include "boards.h"
 
 int main() {
     bsp_board_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS);
@@ -27,6 +26,5 @@ int main() {
             bsp_board_led_off(BSP_BOARD_LED_2);
         }
     }
-}
-</code>
+}'''
 
