@@ -1,5 +1,5 @@
 # nRF52840
-This Repository holds documentations and tutorials for the Nordic nRF52840 dongle.
+This repository by Shaun Regenbaum for Huxley holds documentations and tutorials for the Nordic nRF52840 dongle.
 ## Table of Contents
 #### Set-up
 ##### &nbsp;&nbsp;&nbsp;&nbsp; Background
