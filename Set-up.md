@@ -31,4 +31,6 @@ So you will find the config files for setting up your toolchain in the component
 
 You will then need to set up the maker-file that defines the behaviour of the 'make' command which we will be using to compile our code. To do this navigate to ".\components\toolchain\gcc\Makefile.windows" where you will need to identify where the bin file is for your compiler. In my case it is found here "C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/". You will also need to specify the version you are using and the prefix. In our case, the pre-fix is "arm-none-eabi".
 
+There will be more set-up later once we start an example project, but it will presented when we get there.
+
 
