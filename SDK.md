@@ -42,14 +42,22 @@ You will also find functions in the board.c file. They are extremely useful. Som
 &nbsp;&nbsp;```C++ bsp_board_buttons_init(void)``` A function to initialize the buttons on the board.
 
 #### drivers
-#### iot
-#### libraries
-#### nfc
-#### propietary_rf
-#### serialization
-#### softdevice
-#### toolchain
+This incorporates the drivers_ext and drivers_nrf folders. These both contain drivers for various peripherals you might use. For example if you want to use radio components you dont have to build the API from scratch it is already done for you. 
 
+#### iot
+This contains a whole bunch of stuff. Lets say for some reason you are using the dongle as a controller for a server, there is code for FTP transfer stuff as well as DFU stuff. There is a whole lot of communication code with bigger things. So if you want to do Internet of Things stuff, then look here. 
+
+#### libraries
+This contains a whole lot of useful libraries and functions that you may need to use in all your code. If you need timers, the simple_timer library has got you covered. If you need to schedule events, the scheduler library has got you covered. If you want to store stuff on an sd card, we have the sdcard library. If you want to simulate sensors that you don't have, there is the sensorsim library. The list goes on and includes power managment libraries, memory storage libraries, encryption libraries (including sha256), and much more. Make sure to give this folder a look through.
+
+#### nfc
+Obviously if you want to do NFC stuff look here.
+
+#### softdevice
+This folder contains the pre-built softdevice layers that you can use in the nRF Connect Application. They are essentially protocol stacks that make it easier to use some pre-built peripherals and other stuff. 
+
+#### toolchain
+We have already used this folder in out set-up. It contains all the files you need to link, make, etc...  with whatever toolchain you want to use. 
 
 ### Config
 This section of the SDK contains configuration files. You may need to edit these if you are running into probablems with things referencing each other, but you will most likely not need to touch this folder. 
