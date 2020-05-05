@@ -2,13 +2,13 @@
 ## What is in it?
 ### Components
 > This section of the SDK contains different APIs, libraries, and functions to use the differnt capabilities of the dongle. There are also the different toolchains for specific softdevices and their APIs. Finally it contains linker files and other files for connecting the SDK to a given toolchain. We wont go through it all, but will go through some important parts of it:
-> #### 802_15_4
+#### 802_15_4
 >> IEEE 802.15.4 is a technical standard which defines the operation of low-rate wireless personal area networks. So if you want to do anything with personal area networks, this would be the place to find out about its secure communication protocols and its api.
-> #### ant
+#### ant
 >> ANT (Adaptive Network Topology) is a proprietary multicast wireless sensor network technology. So if you need to communcinate with other devices that are using ANT look here.
-> #### ble
+#### ble
 >> BLE (Bluetooth Low Energy) is one of the best things about the nRF52850 Dongle. This allows it full access to bluetooth networks, meshes, and other forms of bluetooth communications. There is a lot of cool stuff you can do with bluetooth and this device, but I will point out a few of the cool things that the SDK provides (although there is much more):
->> ###### ble_advertising
+###### ble_advertising
 >>> Bluetooth advertising is when a bluetooth device broadcasts data, either to simply transmit data or to prompt connections. Either way this is one of the most useful parts of bluetooth. Here you will find code (ble_advertising.c file) for everything you might want with bluetooth advertising. There is also the header file (ble_advertising.h) that tells us the data strucutres and more information on the I/O of the code. Below are some great functions:
 
 >>> &nbsp;&nbsp;```C++ addr_is_valid()``` A function to validate a bluetooth address
@@ -17,15 +17,15 @@
 
 >>> &nbsp;&nbsp;```C++ on_disconnected()``` A function to determine the handling of the Disconnected event in the BLE stack
 
->> ###### ble_db_discovery
+###### ble_db_discovery
 >>> Bluetooth Database discovery is the way a device gets information from an application's profile. It can look at the UUID's of any service, as well as the charecteristics and properties (I am using all those terms in the formal sense as defined by Bluetooth protocols). A great function is:
 
 >>> &nbsp;&nbsp;```C++ characteristics_discover()``` A function for charecteristic discovery.
 
->> ###### ble_services
+###### ble_services
 >>> This contains features for BLE that are offered by certain servers and clients. For example, if you want to work with Apple's Notification service, you can find functions in the ble_ancs_c folder (ANCS stands for Apple Notification Center Service).
 
->> ###### common
+###### common
 >>> This contains common functions that are both used in other places, and functions that you will probably want to use such as scanning functions. Definetly look in here for main things. 
 
 > #### boards
