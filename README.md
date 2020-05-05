@@ -12,3 +12,6 @@ This Repository will hold all the documentations, tutorials, and code for what w
 
 #### Simple Example Project
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Getting Started
+###### &nbsp;&nbsp;&nbsp;&nbsp;Setting up Make
+###### &nbsp;&nbsp;&nbsp;&nbsp;Compiling
+###### &nbsp;&nbsp;&nbsp;&nbsp;Uploading
