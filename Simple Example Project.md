@@ -30,3 +30,17 @@ int main() {
 }
 ```
 
+## Setting up Make
+We are going to need to set up our local makerfie for the project so open up this folder: ".\pca10059\s140\armgcc".
+Then open up the makerfile and write the correct SDK root and Project Dir on lines 5 and 6. For me it is this:
+```C++
+SDK_ROOT := A:\Nordic\SDK
+PROJ_DIR := A:\Nordic\Workspace\EX01
+```
+
+## Compiling
+Now that we have our code and everything set up, we have to generate a hex file in order to upload to our dongle.
+You will need to open your terminal and navigate to the ".\pca10059\s140\armgcc" folder. Then you will simply write make on the terminal line and enter. This will generate a hex file that we will upload using nRF Connect.
+
+## Uploading
+Now we want to open up nRF-Connect and specfically the Programmer app. You will then Add a Hex file that you generated and simply write it to the device. 
