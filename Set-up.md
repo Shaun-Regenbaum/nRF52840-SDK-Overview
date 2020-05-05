@@ -27,9 +27,18 @@ We are going to be using Visual Studio Code, also known as VS Code. You can get 
 More importantly we are using a C/C++ language support extension by Microsoft. You should be able to find it by simply looking up C/C++ in VS Code, It should be the first option. Just in case, its formal name is ms-vscode.cpptools by Microsoft, and can be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
 
 ## ToolChain
-So you will find the config files for setting up your toolchain in the components folder of the SDK. There are a bunch of different options for your toolchain. The most important desicion is what compiler you will use. For our development we are using the standard GCC toolchain. The compiler is probabably already installed on your machine, but if not you can install it from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm). 
+There are four options for toolchains provided by Nordic (alongside a couple other minor options like CMSIS):
 
-You will then need to set up the maker-file that defines the behaviour of the 'make' command which we will be using to compile our code. To do this navigate to ".\components\toolchain\gcc\Makefile.windows" where you will need to identify where the bin file is for your compiler. In my case it is found here "C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/". You will also need to specify the version you are using and the prefix. In our case, the pre-fix is "arm-none-eabi".
+1) ARM: MDK-ARM
+2) GCC: GCC-ARM
+3) IAR
+4) SES
+
+Now IAR (IAR Workbench) and SES are closed systems. It is very common for people to use SES(Segger Embedded Studio), but I really like VS Code, which is a general-use IDE. Because of this we are going to be using GCC-ARM toolchain. 
+
+So, you might find that you need to connect the SDK to the GNU install folder. You will be able to do this in the maker-file.
+
+To do this navigate to ".\components\toolchain\gcc\Makefile.windows" where you will need to identify where the bin file is for the GCC compiler. In my case it is found here "C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/". You will also need to specify the version you are using and the prefix. In our case, the pre-fix is "arm-none-eabi".
 
 There will be more set-up later once we start an example project, but it will presented when we get there.
 
