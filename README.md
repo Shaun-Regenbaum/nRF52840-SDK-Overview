@@ -1,5 +1,8 @@
 # nRF52840
-This repository by Shaun Regenbaum for Huxley holds documentations and tutorials for the Nordic nRF52840 dongle. At the time, I found almost no good documentation for this chip, so I thought others may have encountered this problem as well. Otherwise, hopefully it has been solved by now.
+### This has now been archived.
+This repository by Shaun Regenbaum for Huxley holds documentations and tutorials for the Nordic nRF52840 dongle. 
+
+At the time, I found almost no good documentation for this chip, so I thought others may have encountered this problem as well. It seems there is a lot more info out there now about the SDK though and it as an outdated chip at this point, so I am archiving this overview.
 ## Table of Contents
 #### Set-up
 ##### &nbsp;&nbsp;&nbsp;&nbsp; Background
